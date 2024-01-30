@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/234d648a06.js" crossorigin="anonymous"></script>
+        <title>iCoder - The Bloger</title>
+    </head>
+    <body style="overflow-x: hidden;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h3
+                        class="fw-light">iCoder</h3></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eBlogs.html">Explor
+                                Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contect.html">Contect
+                                us</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+
+                    <div class="mx-2">
+                        <button class="btn btn-outline-success"
+                            data-bs-toggle="modal" data-bs-target="#LoginModal"
+                            type="button">Login</button>
+                    </div>
+
+                    <div class="mx-2">
+                        <button class="btn btn-outline-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#SignupModal"
+                            type="submit">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="LoginModal" tabindex="-1"
+        aria-labelledby="LoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginLabel">Login to
+                        iCoder</h5>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1"
+                                class="form-label">Email address</label>
+                            <input type="email" class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll
+                                never share your email with anyone
+                                else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1"
+                                class="form-label">Password</label>
+                            <input type="password" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                        <button type="submit"
+                            class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Signup Modal -->
+
+        <div class="modal fade" id="SignupModal" tabindex="-1"
+            aria-labelledby="SignupLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="SignupLabel">Get an a iCoder
+                            Account</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputtext"
+                                    class="form-label">Full Name</label>
+                                <input type="text" class="form-control"
+                                    id="exampleInputtext"
+                                    aria-describedby="Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1"
+                                    class="form-label">Email address</label>
+                                <input type="email" class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll
+                                    never share your email with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword2"
+                                    class="form-label">Conferm Password</label>
+                                <input type="cpassword" class="form-control"
+                                    id="exampleInputPassword2">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input"
+                                    id="exampleCheck1">
+                                <label class="form-check-label"
+                                    for="exampleCheck1">I agree the <a href="#">terms & conditions</a> of iCoder</label>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--carousel code started -->
+
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="https://source.unsplash.com/1400x400/?javascript,Nodjs"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to iCoder</h2>
+                        <p> where innovation meets expertise! </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="https://source.unsplash.com/1400x400/?Python,code"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Leran Python from scratch</h5>
+                        <p>"Unlocking the Power of Python: Where Beginners Thrive and Code Comes to Life!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="https://source.unsplash.com/1400x400/?React,html"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Leran Advance JavaScript</h5>
+                        <p>"Unlock the World of Code: Your Gateway to JavaScript Mastery, Where Beginners Thrive!"</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Main contaner started -->
+
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">Unlock the World of Code with
+                iCoder</h1>
+            <div class="col-lg-6 mx-auto my-3">
+                <p
+                    class="lead mb-4">"Your Ultimate Destination for 15+ Coding Language Blogs! Dive into a diverse array of programming languages, from Python to JavaScript and beyond. Elevate your coding skills, iCoder is your go-to hub for insightful tutorials, tips, and tricks to master the art of coding With iCoder – where innovation meets expertise!"</p>
+            </div>
+        </div>
+
+        <!-- box container-->
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-header">JavaScript</div>
+                            <img
+                                src="https://source.unsplash.com/300x225/?tech,code"
+                                class="bd-placeholder-img card-img-top"
+                                width="100%" height="225"
+                                aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+
+                            <div class="card-body">
+                                <p class="card-text">In the vast universe of
+                                    programming languages, JavaScript stands out
+                                    as a versatile and powerful tool that
+                                    empowers developers to create dynamic and
+                                    interactive web applications....</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button"
+                                            class="btn btn-sm btn-outline-warning">View
+                                            More</button>
+                                    </div>
+                                    <small class="text-muted">20 jan
+                                        2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-header">Python</div>
+                            <img
+                                src="https://source.unsplash.com/300x225/?tech,Python"
+                                class="bd-placeholder-img card-img-top"
+                                width="100%" height="225"
+                                aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+
+                            <div class="card-body">
+                                <p class="card-text">Welcome to the world of
+                                    Python, a versatile and beginner-friendly
+                                    programming language that has gained immense
+                                    popularity for its readability, simplicity,
+                                    and powerful capabilities....</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button"
+                                            class="btn btn-sm btn-outline-warning">View
+                                            More</button>
+                                    </div>
+                                    <small class="text-muted">29 dec
+                                        2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-header ">React</div>
+                            <img
+                                src="https://source.unsplash.com/300x225/?tech,JavaScript"
+                                class="bd-placeholder-img card-img-top"
+                                width="100%" height="225"
+                                aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+
+                            <div class="card-body">
+                                <p class="card-text">In the ever-evolving
+                                    landscape of web development, React has
+                                    emerged as a powerful and widely-used
+                                    JavaScript library for building user
+                                    interfaces. Developed and maintained by
+                                    Facebook...</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button"
+                                            class="btn btn-sm btn-outline-warning">View
+                                            More</button>
+                                    </div>
+                                    <small class="text-muted">10 dec
+                                        2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Box container-->
+
+        <div
+            class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1">15+ Coding Language
+                    Blogs!</h1>
+
+                <p class="lead my-4">The website understands the unique
+                    challenges
+                    faced by beginners and addresses them with user-friendly
+                    content, step-by-step guides, and hands-on projects.
+                    iCoder's commitment to building a solid foundation for
+                    novice programmers makes it an invaluable resource for those
+                    taking their first steps into the vast world of coding.</p>
+
+                <div
+                    class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+
+                    <!--Solution for redracting page through the button from 
+                    https://stackoverflow.com/questions/17565401/html-button-navigate-to-other-page-different-approaches-->
+
+                    <button type="button"
+                        onclick="window.location='eBlogs.html'"
+                        class="btn btn-primary btn-lg px-4 me-md-2 fw-bold my-4">Explor
+                        New Blogs</button>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3"
+                    src="https://source.unsplash.com/720x500/?tech,code">
+            </div>
+        </div>
+
+        <!--Footer started-->
+
+        <div class="container-fluid">
+            <footer
+                class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/"
+                        class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"><use
+                                xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2023
+                        iCoder, Inc</span>
+                </div>
+  
+                <ul
+                    class="nav col-md-4 justify-content-end list-unstyled d-flex mx-5">
+                    <li class="ms-3"><a class="text-body-secondary"
+                            href="https://twitter.com/vaja_manav38062" target="_blank"><img src="Images/twitter.png"
+                                class="bi"
+                                width="24" height="24">
+                        </a></li>
+                    <li class="ms-3"><a class="text-body-secondary"
+                            href="https://www.instagram.com/manav_vaja/" target="_blank"><img src="Images/insta.png" class="bi"
+                                width="24" height="24">
+                        </a></li>
+                    <li class="ms-3"><a class="text-body-secondary"
+                        href="https://github.com/ManavVaja" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #00040a;"></i>
+                        </a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    </body>
+</html>

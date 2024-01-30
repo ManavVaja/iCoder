@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iCoder - The Bloger</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/234d648a06.js" crossorigin="anonymous"></script>
+            
+    </head>
+    <body>
+        <!--Navbar started-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h3
+                        class="fw-light">iCoder</h3></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="eBlogs.html">Explor Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contect.html">Contect
+                                us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Button trigger modal -->
+
+                    <div class="mx-2">
+                        <button class="btn btn-outline-success"
+                            data-bs-toggle="modal" data-bs-target="#LoginModal"
+                            type="button">Login</button>
+                    </div>
+
+                    <div class="mx-2">
+                        <button class="btn btn-outline-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#SignupModal"
+                            type="submit">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Login Modal-->
+
+        <div class="modal fade" id="LoginModal" tabindex="-1"
+            aria-labelledby="LoginLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="LoginLabel">Login to
+                            iCoder</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1"
+                                    class="form-label">Email address</label>
+                                <input type="email" class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll
+                                    never share your email with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Signup modal-->
+
+        <div class="modal fade" id="SignupModal" tabindex="-1"
+            aria-labelledby="SignupLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="SignupLabel">Get an a iCoder
+                            Account</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputtext"
+                                    class="form-label">Full Name</label>
+                                <input type="text" class="form-control"
+                                    id="exampleInputtext"
+                                    aria-describedby="Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1"
+                                    class="form-label">Email address</label>
+                                <input type="email" class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll
+                                    never share your email with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword2"
+                                    class="form-label">Conferm Password</label>
+                                <input type="cpassword" class="form-control"
+                                    id="exampleInputPassword2">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input"
+                                    id="exampleCheck1">
+                                <label class="form-check-label"
+                                    for="exampleCheck1">I agree the <a href="#">terms & conditions</a> of iCoder</label>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content body started-->
+
+        <!--sub navbar-->
+
+        <div class="nav-scroller bg-body shadow-sm">
+            <nav class="nav nav-underline" aria-label="Secondary navigation">
+            <span class="badge bg-light text-dark rounded-pill align-text-bottom" style="overflow: scroll;"></span>
+              </a>
+              <a class="nav-link" href="#">Css</a>
+              <a class="nav-link" href="#">Html</a>
+              <a class="nav-link" href="#">JavaScript</a>
+              <a class="nav-link" href="#">React</a>
+              <a class="nav-link" href="#">Anguler</a>
+              <a class="nav-link" href="#">Wordpress</a>
+              <a class="nav-link" href="#">Bootstrap</a>
+              <a class="nav-link" href="#">Anguler</a>
+              <a class="nav-link" href="#">Nord.js</a>
+              <a class="nav-link" href="#">.Net</a>
+              <a class="nav-link" href="#">Python</a>
+              <a class="nav-link" href="#">.Net</a>
+              <a class="nav-link" href="#">C</a>
+              <a class="nav-link" href="#">C++</a>
+              <a class="nav-link" href="#">C#</a>
+              <a class="nav-link" href="#">MySql</a>
+              <a class="nav-link" href="#">MongoDB</a>
+              <a class="nav-link" href="#">Oracle</a>
+              <a class="nav-link" href="#">SQLite</a>
+            </nav>
+        </div>
+
+        <!--icon with contant box 1st row-->
+
+        
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Frontend Languages</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+    <!-- useingfontawesome icons querry resolved 
+    refrence from https://fontawesome.com/icons/python?f=brands&s=solid&an=flip&pc=%23FFD43B -->
+                <i class="fa-brands fa-css3-alt" style="color: #11a5e4; font-size: 50px;"></i>
+                </div>
+        
+                <div>
+                  <h2>Css</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <i class="fa-brands fa-js" style="color: #FFD43B; font-size: 50px;"></i>
+
+                </div>
+                <div>
+                  <h2>JavaScript</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <i class="fa-brands fa-react" style="color: #74C0FC; font-size: 50px;"></i>
+                </div>
+                <div>
+                  <h2>React</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+
+              <div class="col d-flex align-items-start px-4 py-5">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <i class="fa-brands fa-bootstrap" style="color: #541db9; font-size: 50px;"></i>
+                </div>
+                <div>
+                  <h2>Bootstrap</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+
+              <div class="col d-flex align-items-start px-4 py-5">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <i class="fa-brands fa-angular" style="color: #f01800; font-size: 50px;"></i>
+                </div>
+                <div>
+                  <h2>Angular</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+
+              <div class="col d-flex align-items-start px-4 py-5">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <i class="fa-brands fa-wordpress" style="color: #1a6299; font-size: 50px;"></i>
+                </div>
+                <div>
+                  <h2>Wordpress</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+        <!--2nd row-->
+        
+        <div class="container px-4 py-1" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Backend Languages</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                 <i class="fa-brands fa-node-js fa-2xl" style="color: #16e35e; font-size: 50px;"></i>
+                </div>
+        
+                <div>
+                  <h2>Nord.js</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Primary button
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <i class="fa-brands fa-python" style="color: #FFD43B; font-size: 50px;"></i>
+                </div>
+                <div>
+                  <h2>Python</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Primary button
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                   <img src="Images/Logo/c.svg" height="50px" width="100px">
+                </div>
+                <div>
+                  <h2>C++</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--3rd row-->
+
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Database Technology</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <i class="fa-solid fa-server" style="color: #1b0651; font-size: 50px;"></i>
+                </div>
+        
+                <div>
+                  <h2>MySql</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Read more..
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <i class="fa-solid fa-database" style="font-size: 50px;"></i>
+
+                </div>
+                <div>
+                  <h2>MongoDB</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Primary button
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <i class="fa-solid fa-cubes" style="font-size: 50px;"></i>
+                </div>
+                <div>
+                  <h2>Oracle</h2>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Primary button
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--Footer started-->
+
+        <div class="container-fluid">
+          <footer
+              class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                  <a href="/"
+                      class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                      <svg class="bi" width="30" height="24"><use
+                              xlink:href="#bootstrap"></use></svg>
+                  </a>
+                  <span class="mb-3 mb-md-0 text-body-secondary">© 2023
+                      iCoder, Inc</span>
+              </div>
+
+              <ul
+                  class="nav col-md-4 justify-content-end list-unstyled d-flex mx-5">
+                  <li class="ms-3"><a class="text-body-secondary"
+                          href="https://twitter.com/vaja_manav38062" target="_blank"><img src="Images/twitter.png"
+                              class="bi"
+                              width="24" height="24">
+                      </a></li>
+                  <li class="ms-3"><a class="text-body-secondary"
+                          href="https://www.instagram.com/manav_vaja/" target="_blank"><img src="Images/insta.png" class="bi"
+                              width="24" height="24">
+                      </a></li>
+                  <li class="ms-3"><a class="text-body-secondary"
+                      href="https://github.com/ManavVaja" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #00040a;"></i>
+                      </a></li>
+              </ul>
+          </footer>
+        </div>
+
+        <!-- Bootstrap script link's -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    </body>
+</html>
